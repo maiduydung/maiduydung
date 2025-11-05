@@ -35,22 +35,22 @@ class State(rx.State):
         {
             "icon": "search",
             "title": "Web Scraping at Scale",
-            "description": "I use Playwright and automation to gather structured data that stays fresh and compliant.",
+            "description": "Need Zillow-level data pulled daily? I use automation and smart techniques to gather structured data that stays fresh and compliant.",
         },
         {
             "icon": "bar-chart-2",
             "title": "Real-Time and Batch Analytics",
-            "description": "I build lightweight reporting stacks to help teams act fast on what the data says.",
+            "description": "I build lightweight reporting stacks and internal tools to help teams act fast on what the data says.",
         },
         {
             "icon": "cpu",
             "title": "Applied ML & AI",
-            "description": "I deploy LLM-based systems, monitor models in prod, and accelerate them with ONNX or specialized hardware.",
+            "description": "I deploy AI systems that actually work—chatbots, search, and classification models. No AI theater, just real use cases that deliver value.",
         },
         {
             "icon": "briefcase",
             "title": "VC Tools & Real Estate Intelligence",
-            "description": "I build full-stack platforms for investor workflows, deal sourcing, and property ROI analysis.",
+            "description": "I build full-stack platforms for investor workflows, including deal sourcing, property ROI analysis, and intelligent search—all tailored for decision-makers.",
         },
     ]
     tech_stack: list[dict[str, str | list[str]]] = [
