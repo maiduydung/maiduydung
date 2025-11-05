@@ -122,7 +122,7 @@ class State(rx.State):
         {
             "title": "AI-Powered Property Classification",
             "summary": "We automatically find and categorize properties (Turnkey, Light Work, Fixer) from online listings. Photos and details are processed within minutes so your team sees consistent, ready-to-use labels across thousands of homes.",
-            "image": "/project_pics/zillow_image_scraper.jpg",
+            "image": "/project_pics/zillow_img_scraper.png",
             "highlights": [
                 "Technical highlights: web scraper, event queue, async workers",
                 "Azure Functions, Logic Apps, Service Bus",
@@ -134,7 +134,7 @@ class State(rx.State):
         {
             "title": "Real-Time Real Estate Data Dashboard",
             "summary": "A single place to see what data you have, how fresh it is, where gaps exist, and whether everything is running smoothly. Built for quick daily check-ins and investor-ready reporting.",
-            "image": "/project_pics/proplytics_dashboard.jpg",
+            "image": "/project_pics/dashboard.png",
             "highlights": [
                 "Technical highlights: Streamlit on Azure Container Apps",
                 "Live data from Cosmos DB & Blob Storage",
