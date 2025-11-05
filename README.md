@@ -1,35 +1,49 @@
-## Mai Personal Site
+## 👋 Hi, I'm Mai
 
-Simple portfolio built with Reflex + Tailwind v4.
+**Trilingual Data & ML Engineer** (English / Vietnamese / Japanese)
 
-### Prerequisites
-- Python 3.11
-- Node (bundled by Reflex)
+I build end-to-end data and AI systems for fast-moving startups and SaaS companies. Proven track record across Tokyo, Shanghai, Vancouver, NYC, and SF.
 
-### Setup
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -U pip
-pip install -r requirements.txt
-```
+### What I Do
 
-### Run locally
-```bash
-reflex run
-```
-App: `http://localhost:3000`
+I combine technical depth with a founder's mindset to deliver results, not just code. From infrastructure to insights, I handle:
 
-### Notes
-- Tailwind is provided via `TailwindV4Plugin` in `rxconfig.py`.
-- Public stylesheet is injected via `stylesheets=["/public/output.css"]`.
-- Main app code is in `mai_personal_site/mai_personal_site.py`.
+- ☁️ **Cloud-Native Data Infrastructure** - Scalable Azure-based pipelines that are clean, tested, and production-ready
+- 🔍 **Web Scraping at Scale** - Zillow-level data extraction with automation that stays fresh and compliant
+- 📊 **Real-Time & Batch Analytics** - Lightweight reporting stacks and internal tools for data-driven decisions
+- 🤖 **Applied ML & AI** - Chatbots, search, and classification models that actually work—no AI theater, just real value
+- 💼 **VC Tools & Real Estate Intelligence** - Full-stack platforms for investor workflows, deal sourcing, and property ROI analysis
 
-### Deploy (Reflex Pro)
-Push to your linked repo; Reflex Pro will build using the same config. If styles look off locally, clear caches:
-```bash
-rm -rf .reflex .web node_modules package-lock.json
-reflex run
-```
+### Why Work With Me
+
+- **Founder Mindset, Builder Execution** - I code like a builder and think like a founder, understanding business context behind technical requirements
+- **Led Data Infra at a SaaS Startup** - Hands-on experience building and leading data infrastructure in fast-paced, high-growth environments
+- **Async & Cross-Timezone Native** - Experienced with distributed teams—no hand-holding required, I deliver results independently
+- **Fast, Reliable & Battle-Tested** - My solutions are production-tested and built to be reliable and performant
+
+### Tech Stack
+
+**Backend:** FastAPI, Azure Functions, Container Apps, Service Bus, Logic Apps  
+**Data & ML:** PostgreSQL, DuckDB, PyTorch, PyCaret, ONNX, MLflow  
+**Infrastructure:** Azure, Docker, GitHub Actions, Terraform  
+**Scraping:** Playwright, Botasaurus, Requests, BeautifulSoup  
+**Dashboards:** Streamlit, Gradio, Azure Dashboard, Grafana  
+**Vector DB & AI:** FAISS, PGVector, LangChain, LlamaIndex
+
+### Open for Short-Term Projects
+
+You don't need a full-time hire. You need an expert who can deliver results now.
+
+**Let's build something together.**
+
+### Get In Touch
+
+📧 **Email:** [maiduydungvn@gmail.com](mailto:maiduydungvn@gmail.com)  
+💼 **LinkedIn:** [linkedin.com/in/maiduydung](https://www.linkedin.com/in/maiduydung/)  
+📅 **Calendly:** [Schedule a meeting](https://calendly.com/maiduydungvn/meeting-with-mai)
+
+---
+
+*Check out my [personal site](https://maiduydung.com) for more details on my work and projects.*
 
 
