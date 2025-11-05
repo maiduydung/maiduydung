@@ -1,0 +1,1 @@
+import"./react-CchQLuKp.js";import{t as e}from"./createLucideIcon-BdN_E-6n.js";var t=[[`path`,{d:`m9 18 6-6-6-6`,key:`mthhwq`}]],n=e(`chevron-right`,t);export{t as __iconNode,n as default};

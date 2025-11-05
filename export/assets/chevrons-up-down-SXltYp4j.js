@@ -1,0 +1,1 @@
+import"./react-CchQLuKp.js";import{t as e}from"./createLucideIcon-BdN_E-6n.js";var t=[[`path`,{d:`m7 15 5 5 5-5`,key:`1hf1tw`}],[`path`,{d:`m7 9 5-5 5 5`,key:`sgt6xg`}]],n=e(`chevrons-up-down`,t);export{t as __iconNode,n as default};

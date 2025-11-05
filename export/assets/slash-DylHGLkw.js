@@ -1,0 +1,1 @@
+import"./react-CchQLuKp.js";import{t as e}from"./createLucideIcon-BdN_E-6n.js";var t=[[`path`,{d:`M22 2 2 22`,key:`y4kqgn`}]],n=e(`slash`,t);export{t as __iconNode,n as default};
