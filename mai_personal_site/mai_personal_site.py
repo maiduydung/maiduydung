@@ -42,7 +42,7 @@ def hero_section() -> rx.Component:
                 ),
                 rx.el.div(
                     rx.el.image(
-                        src="/avatar/mai_avatar.jpg",
+                        src="/avatar/mai_avatar.png",
                         class_name="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 border-4 border-blue-600 shadow-lg",
                     ),
                     class_name="hidden md:flex justify-center items-center md:w-1/3",
