@@ -126,6 +126,30 @@ def services_section() -> rx.Component:
     )
 
 
+def render_tech_category(category_name: str, items: list[dict[str, str]]) -> rx.Component:
+    """Render a single tech stack category."""
+    return rx.el.div(
+        rx.el.h3(
+            category_name,
+            class_name="text-lg font-semibold text-gray-700 mb-4",
+        ),
+        rx.el.div(
+            rx.foreach(
+                items,
+                lambda item: rx.el.a(
+                    item["name"],
+                    href=item["url"],
+                    target="_blank",
+                    rel="noopener noreferrer",
+                    class_name="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-lg hover:bg-gray-200 hover:text-gray-900 transition-colors",
+                ),
+            ),
+            class_name="flex flex-wrap gap-2",
+        ),
+        class_name="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm",
+    )
+
+
 def tech_stack_section() -> rx.Component:
     """The tech stack section."""
     return rx.el.section(
@@ -142,26 +166,12 @@ def tech_stack_section() -> rx.Component:
                 class_name="text-center",
             ),
             rx.el.div(
-                rx.foreach(
-                    State.tech_stack,
-                    lambda category: rx.el.div(
-                        rx.el.h3(
-                            category["category"],
-                            class_name="text-lg font-semibold text-gray-700 mb-4",
-                        ),
-                        rx.el.div(
-                            rx.foreach(
-                                category["items"],
-                                lambda item: rx.el.span(
-                                    item,
-                                    class_name="bg-gray-100 text-gray-700 text-sm font-medium px-3 py-1.5 rounded-lg",
-                                ),
-                            ),
-                            class_name="flex flex-wrap gap-2",
-                        ),
-                        class_name="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm",
-                    ),
-                ),
+                render_tech_category("Backend", State.backend_items),
+                render_tech_category("Data & ML", State.data_ml_items),
+                render_tech_category("Infra", State.infra_items),
+                render_tech_category("Scraping & Automation", State.scraping_items),
+                render_tech_category("Dashboards & Analytics", State.dashboard_items),
+                render_tech_category("Vector DB & AI", State.vector_items),
                 class_name="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
             ),
             class_name="container mx-auto px-4 py-20 md:py-28",
