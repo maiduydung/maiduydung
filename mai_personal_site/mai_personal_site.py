@@ -473,6 +473,21 @@ app = rx.App(
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
             rel="stylesheet",
         ),
+        rx.el.style(
+            """
+            /* Hide connection error notifications */
+            section[aria-label*="Notifications"],
+            div[title*="Connection Error"],
+            div[title*="connection error"] {
+                display: none !important;
+            }
+            
+            /* Hide "Built with Reflex" link */
+            a[href*="reflex.dev"] {
+                display: none !important;
+            }
+            """,
+        ),
     ],
 )
 app.add_page(index)
