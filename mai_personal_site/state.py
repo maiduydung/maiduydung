@@ -19,6 +19,36 @@ class State(rx.State):
     ]
     show_dialog_for_image: str = ""
 
+    @rx.var
+    def backend_items(self) -> list[dict[str, str]]:
+        """Backend tech stack items."""
+        return self.tech_stack[0]["items"]
+    
+    @rx.var
+    def data_ml_items(self) -> list[dict[str, str]]:
+        """Data & ML tech stack items."""
+        return self.tech_stack[1]["items"]
+    
+    @rx.var
+    def infra_items(self) -> list[dict[str, str]]:
+        """Infra tech stack items."""
+        return self.tech_stack[2]["items"]
+    
+    @rx.var
+    def scraping_items(self) -> list[dict[str, str]]:
+        """Scraping & Automation tech stack items."""
+        return self.tech_stack[3]["items"]
+    
+    @rx.var
+    def dashboard_items(self) -> list[dict[str, str]]:
+        """Dashboards & Analytics tech stack items."""
+        return self.tech_stack[4]["items"]
+    
+    @rx.var
+    def vector_items(self) -> list[dict[str, str]]:
+        """Vector DB & AI tech stack items."""
+        return self.tech_stack[5]["items"]
+
     @rx.event
     def toggle_image_dialog(self, image_src: str):
         if self.show_dialog_for_image == image_src:
@@ -53,30 +83,63 @@ class State(rx.State):
             "description": "I build full-stack platforms for investor workflows, including deal sourcing, property ROI analysis, and intelligent search—all tailored for decision-makers.",
         },
     ]
-    tech_stack: list[dict[str, str | list[str]]] = [
+    tech_stack: list[dict[str, str | list[dict[str, str]]]] = [
         {
             "category": "Backend",
-            "items": ["FastAPI", "Function Apps", "Container Apps", "Service Bus", "Logic Apps"],
+            "items": [
+                {"name": "FastAPI", "url": "https://fastapi.tiangolo.com/"},
+                {"name": "Function Apps", "url": "https://azure.microsoft.com/en-us/products/functions"},
+                {"name": "Container Apps", "url": "https://azure.microsoft.com/en-us/products/container-apps"},
+                {"name": "Service Bus", "url": "https://azure.microsoft.com/en-us/products/service-bus"},
+                {"name": "Logic Apps", "url": "https://azure.microsoft.com/en-us/products/logic-apps"},
+            ],
         },
         {
             "category": "Data & ML",
-            "items": ["PSQL", "DuckDB", "PyTorch", "PyCaret", "ONNX", "MLflow"],
+            "items": [
+                {"name": "PSQL", "url": "https://www.postgresql.org/"},
+                {"name": "DuckDB", "url": "https://duckdb.org/"},
+                {"name": "PyTorch", "url": "https://pytorch.org/"},
+                {"name": "PyCaret", "url": "https://pycaret.org/"},
+                {"name": "ONNX", "url": "https://onnx.ai/"},
+                {"name": "MLflow", "url": "https://mlflow.org/"},
+            ],
         },
         {
             "category": "Infra",
-            "items": ["Azure", "Docker", "GitHub Actions", "Terraform"],
+            "items": [
+                {"name": "Azure", "url": "https://azure.microsoft.com/"},
+                {"name": "Docker", "url": "https://www.docker.com/"},
+                {"name": "GitHub Actions", "url": "https://github.com/features/actions"},
+                {"name": "Terraform", "url": "https://www.terraform.io/"},
+            ],
         },
         {
             "category": "Scraping & Automation",
-            "items": ["Playwright", "Botasaurus", "Requests", "BeautifulSoup"],
+            "items": [
+                {"name": "Playwright", "url": "https://playwright.dev/"},
+                {"name": "Botasaurus", "url": "https://github.com/omkarcloud/botasaurus"},
+                {"name": "Requests", "url": "https://requests.readthedocs.io/"},
+                {"name": "BeautifulSoup", "url": "https://www.crummy.com/software/BeautifulSoup/"},
+            ],
         },
         {
             "category": "Dashboards & Analytics",
-            "items": ["Streamlit", "Gradio", "Azure Dashboard", "Grafana"],
+            "items": [
+                {"name": "Streamlit", "url": "https://streamlit.io/"},
+                {"name": "Gradio", "url": "https://www.gradio.app/"},
+                {"name": "Azure Dashboard", "url": "https://azure.microsoft.com/en-us/get-started/azure-portal"},
+                {"name": "Grafana", "url": "https://grafana.com/"},
+            ],
         },
         {
             "category": "Vector DB & AI",
-            "items": ["FAISS", "PGVector", "LangChain", "LlamaIndex"],
+            "items": [
+                {"name": "FAISS", "url": "https://github.com/facebookresearch/faiss"},
+                {"name": "PGVector", "url": "https://github.com/pgvector/pgvector"},
+                {"name": "LangChain", "url": "https://www.langchain.com/"},
+                {"name": "LlamaIndex", "url": "https://www.llamaindex.ai/"},
+            ],
         },
     ]
     why_me: list[dict[str, str]] = [
