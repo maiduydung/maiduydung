@@ -1,9 +1,10 @@
 import reflex as rx
 
 config = rx.Config(
-    app_name="maiduydung",
+    app_name="mai_personal_site",
+    stylesheets=["/public/output.css"],
     plugins=[
-        rx.plugins.SitemapPlugin(),
         rx.plugins.TailwindV4Plugin(),
-    ]
+        rx.plugins.SitemapPlugin(),
+    ],
 )
