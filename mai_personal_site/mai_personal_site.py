@@ -32,7 +32,7 @@ def hero_section() -> rx.Component:
                             class_name="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-sm",
                         ),
                         rx.el.a(
-                            "View My Work",
+                            "View My Works",
                             href="#works",
                             class_name="bg-white text-gray-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors border border-gray-200",
                         ),

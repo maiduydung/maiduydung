@@ -56,7 +56,7 @@ class State(rx.State):
     tech_stack: list[dict[str, str | list[str]]] = [
         {
             "category": "Backend",
-            "items": ["FastAPI", "Azure Functions", "Container Apps", "Service Bus"],
+            "items": ["FastAPI", "Function Apps", "Container Apps", "Service Bus", "Logic Apps"],
         },
         {
             "category": "Data & ML",
@@ -64,11 +64,11 @@ class State(rx.State):
         },
         {
             "category": "Infra",
-            "items": ["Azure (Cosmos DB, Blob, Service Bus)", "Docker", "Terraform"],
+            "items": ["Azure", "Docker", "GitHub Actions", "Terraform"],
         },
         {
             "category": "Scraping & Automation",
-            "items": ["Playwright", "Requests", "BeautifulSoup"],
+            "items": ["Playwright", "Botasaurus", "Requests", "BeautifulSoup"],
         },
         {
             "category": "Dashboards & Analytics",
@@ -120,44 +120,38 @@ class State(rx.State):
     ]
     works: list[dict[str, str | list[str]]] = [
         {
-            "title": "Secure, Secretless CI/CD for Azure",
-            "summary": "Automated deployment for Azure Functions & Container Apps using GitHub Actions with OIDC and Managed Identities, eliminating the need for stored secrets.",
+            "title": "AI-Powered Property Classification",
+            "summary": "We automatically find and categorize properties (Turnkey, Light Work, Fixer) from online listings. Photos and details are processed within minutes so your team sees consistent, ready-to-use labels across thousands of homes.",
+            "image": "/project_pics/zillow_image_scraper.jpg",
             "highlights": [
-                "GitHub Actions & OIDC",
-                "Azure Managed Identity",
-                "Role-Based Access Control (RBAC)",
-                "Terraform for IaC",
-                "Federated Credentials",
-                "Zero-Secret Deployment",
+                "Technical highlights: web scraper, event queue, async workers",
+                "Azure Functions, Logic Apps, Service Bus",
+                "Blob Storage & Cosmos DB for data and state",
+                "Image classification (ML + rules) with caching",
             ],
-            "impact": "Established an enterprise-grade, compliant pipeline that scales across environments. Reduced security risks and automated deployments, allowing developers to ship faster.",
+            "impact": "Less manual review, faster underwriting, and a richer dataset. The system handles thousands of listings daily and keeps quality high while costs stay low.",
         },
         {
             "title": "Real-Time Real Estate Data Dashboard",
-            "summary": "An operational observability layer for a real estate data platform, providing live insights into data freshness, coverage, and pipeline health.",
-            "image": "/placeholder.svg",
+            "summary": "A single place to see what data you have, how fresh it is, where gaps exist, and whether everything is running smoothly. Built for quick daily check-ins and investor-ready reporting.",
+            "image": "/project_pics/proplytics_dashboard.jpg",
             "highlights": [
-                "Streamlit on Azure Container Apps",
-                "Live Cosmos DB & Blob Storage Connection",
-                "Real-Time Metrics Aggregation",
-                "Automated Health Checks",
-                "Data Coverage Visualizations",
-                "ROI & Enhancement Tracking",
+                "Technical highlights: Streamlit on Azure Container Apps",
+                "Live data from Cosmos DB & Blob Storage",
+                "Automated health checks and metrics",
+                "Coverage and freshness visualizations",
             ],
-            "impact": "Provided a single source of truth for data operations, enabling the team to monitor ingestion health and ROI. Increased client trust through transparent reporting.",
+            "impact": "Gives leaders a reliable picture in seconds-fewer blind spots, quicker decisions, and clearer conversations with stakeholders and clients.",
         },
         {
-            "title": "AI-Powered Property Classification",
-            "summary": "An event-driven workflow that automatically classifies real estate properties (Turnkey, Light Maintenance, Fixer-Upper) using metadata and image analysis.",
-            "image": "/placeholder.svg",
+            "title": "Secure, Secretless CI/CD for Azure",
+            "summary": "Code changes go live safely with one click, no shared passwords or keys to manage. Releases are faster, safer, and easier to audit across environments.",
             "highlights": [
-                "Azure Functions & Service Bus",
-                "Concurrent Container App Workers",
-                "Event-Driven Architecture",
-                "Hybrid Inference (ML & rules)",
-                "Scalable Image Processing",
-                "Cosmos DB for state management",
+                "Technical highlights: GitHub Actions with OIDC",
+                "Azure Managed Identity & RBAC",
+                "Terraform-based infrastructure",
+                "Zero stored secrets in pipelines",
             ],
-            "impact": "Automated a high-value business process, enabling rapid property valuation and tagging. The system processes thousands of listings daily, enriching the core dataset.",
+            "impact": "Lower security risk, faster releases, and clean compliance trails-engineering moves quicker without compromising safety.",
         },
     ]
