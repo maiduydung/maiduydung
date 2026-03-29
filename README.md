@@ -10,18 +10,18 @@ I don't build "AI demos." I build systems that replace chaos. Pipelines that don
 
 ### What I'm building
 
-**AI/Data Pipeline for [Proplytics](https://www.proplytics.net/) — U.S. SaaS Real Estate Investment Analytics**
+**AI/Data Pipeline for [Proplytics](https://www.proplytics.net/): U.S. SaaS Real Estate Investment Analytics**
 
-[Proplytics](https://www.proplytics.net/) helps property investors instantly evaluate any U.S. property: ROI, cap rate, cash flow projections, and dual rental strategy comparison (long-term vs. short-term/Airbnb) — work that used to take hours of spreadsheet grinding, delivered in seconds.
+[Proplytics](https://www.proplytics.net/) helps property investors instantly evaluate any U.S. property: ROI, cap rate, cash flow projections, and dual rental strategy comparison (long-term vs. short-term/Airbnb). Work that used to take hours of spreadsheet grinding, delivered in seconds.
 
 I built the data infrastructure that makes this possible: a distributed pipeline that continuously ingests, validates, and enriches property data across multiple U.S. states. Key engineering pieces:
 
-- **Confidence-scored validation layer** — statistical MAD analysis flags unreliable rental estimates so investors see quality signals, not raw data dumps
-- **Sub-second similarity search** — DuckDB columnar engine + pre-computed ZIP spatial relationships, ranked comparables across hundreds of thousands of records in milliseconds
-- **AI enrichment microservices** — LLM-assisted multifamily unit estimation, multi-source reconciliation with 120-day intelligent caching and automatic fallback
-- **GPU-accelerated map visualization** — deck.gl/WebGL rendering for smooth interaction across entire markets
+- **Confidence-scored validation layer**: statistical MAD analysis flags unreliable rental estimates so investors see quality signals, not raw data dumps
+- **Sub-second similarity search**: DuckDB columnar engine + pre-computed ZIP spatial relationships, ranked comparables across hundreds of thousands of records in milliseconds
+- **AI enrichment microservices**: LLM-assisted multifamily unit estimation, multi-source reconciliation with 120-day intelligent caching and automatic fallback
+- **GPU-accelerated map visualization**: deck.gl/WebGL rendering for smooth interaction across entire markets
 
-Stack: Next.js · Python · Azure Functions · Azure Cosmos DB · DuckDB · Azure Cognitive Search · Azure Service Bus
+**Stack**: Next.js · Python · Azure Functions · Azure Cosmos DB · DuckDB · Azure Cognitive Search · Azure Service Bus
 
 [github.com/proplytics](https://github.com/proplytics/)
 
@@ -43,10 +43,10 @@ Stack: Next.js · Python · Azure Functions · Azure Cosmos DB · DuckDB · Azur
 
 ### Stack
 
-**AI/Agents:** LangGraph, LangChain, Chroma, FAISS, PGVector
-**Backend:** Python, FastAPI, Azure Functions, Azure Container Apps, Service Bus
-**Frontend:** TypeScript, React Native (Expo), SvelteKit
-**Infra:** Azure, Docker, GitHub Actions
+- **AI/Agents:** LangGraph, LangChain, Chroma, FAISS, PGVector
+- **Backend:** Python, FastAPI, Azure Functions, Azure Container Apps, Service Bus
+- **Frontend:** TypeScript, React Native (Expo), SvelteKit
+- **Infra:** Azure, Docker, GitHub Actions
 
 ---
 
