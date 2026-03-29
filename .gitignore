@@ -3,6 +3,11 @@ assets/external/
 .states
 *.db
 .web
+
+# Generated static export/build artifacts
+export/
+frontend_export/
+*.zip
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
