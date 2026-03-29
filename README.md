@@ -1,49 +1,38 @@
-## 👋 Hi, I'm Mai
+## Hi, I'm Mai Duy Dung (Mike)
 
-**Trilingual Data & ML Engineer** (English / Vietnamese / Japanese)
+Founder @ **Pathfinder Softworks** -- building data systems and AI agents for companies that make physical things.
 
-I build end-to-end data and AI systems for fast-moving startups and SaaS companies. Proven track record across Tokyo, Shanghai, Vancouver, NYC, and SF.
+Based in Vietnam. Lived in Japan for 7 years (MEXT scholarship + engineering work). I speak English, Vietnamese, and Japanese.
 
-### What I Do
+### What I'm building
 
-I combine technical depth with a founder's mindset to deliver results, not just code. From infrastructure to insights, I handle:
+**Multi-agent systems for real domains:**
 
-- ☁️ **Cloud-Native Data Infrastructure** - Scalable Azure-based pipelines that are clean, tested, and production-ready
-- 🔍 **Web Scraping at Scale** - Zillow-level data extraction with automation that stays fresh and compliant
-- 📊 **Real-Time & Batch Analytics** - Lightweight reporting stacks and internal tools for data-driven decisions
-- 🤖 **Applied ML & AI** - Chatbots, search, and classification models that actually work—no AI theater, just real value
-- 💼 **VC Tools & Real Estate Intelligence** - Full-stack platforms for investor workflows, deal sourcing, and property ROI analysis
+- [`medical-agents`](https://github.com/maiduydung/medical-agents) -- Real-time vitals monitoring with multi-agent triage. Deterministic rules handle the common path ($0 LLM cost); specialist agents (cardiac, respiratory, general) activate only on anomalies. Azure Service Bus + LangGraph + Chroma + openFDA APIs.
 
-### Why Work With Me
+- [`financial_agents`](https://github.com/maiduydung/financial_agents) -- Company analyst agent: RAG over financial docs, live market data, web research. LangGraph orchestration, Streamlit UI with real-time agent activity logs.
 
-- **Founder Mindset, Builder Execution** - I code like a builder and think like a founder, understanding business context behind technical requirements
-- **Led Data Infra at a SaaS Startup** - Hands-on experience building and leading data infrastructure in fast-paced, high-growth environments
-- **Async & Cross-Timezone Native** - Experienced with distributed teams—no hand-holding required, I deliver results independently
-- **Fast, Reliable & Battle-Tested** - My solutions are production-tested and built to be reliable and performant
+- [`FlowShot`](https://github.com/maiduydung/FlowShot) -- CLI/library that reads codebases and generates branded workflow diagrams via LLM. Point it at repos, get SVGs. `pip install flowshot`.
 
-### Tech Stack
+**Production software for a trucking SME (NhuTin):**
 
-**Backend:** FastAPI, Azure Functions, Container Apps, Service Bus, Logic Apps  
-**Data & ML:** PostgreSQL, DuckDB, PyTorch, PyCaret, ONNX, MLflow  
-**Infrastructure:** Azure, Docker, GitHub Actions, Terraform  
-**Scraping:** Playwright, Botasaurus, Requests, BeautifulSoup  
-**Dashboards:** Streamlit, Gradio, Azure Dashboard, Grafana  
-**Vector DB & AI:** FAISS, PGVector, LangChain, LlamaIndex
+- [`TruckerMobile`](https://github.com/maiduydung/TruckerMobile) + [`TruckerMobileBackend`](https://github.com/maiduydung/TruckerMobileBackend) -- Cross-platform trip logger for truck drivers. Expo (React Native) + Azure Functions + PostgreSQL. Designed for drivers with minimal tech literacy -- every action is max 2 taps.
 
-### Open for Short-Term Projects
+- **nhutin-backend** (private) -- Real-time BOM optimization for manufacturing. Solves material requirements planning for a mid-size operation.
 
-You don't need a full-time hire. You need an expert who can deliver results now.
+### Stack
 
-**Let's build something together.**
+**AI/Agents:** LangGraph, LangChain, Chroma, FAISS, PGVector
+**Backend:** Python, FastAPI, Azure Functions, Azure Container Apps, Service Bus
+**Frontend:** TypeScript, React Native (Expo), SvelteKit
+**Infra:** Azure, Docker, GitHub Actions
 
-### Get In Touch
+### How I work
 
-📧 **Email:** [maiduydungvn@gmail.com](mailto:maiduydungvn@gmail.com)  
-💼 **LinkedIn:** [linkedin.com/in/maiduydung](https://www.linkedin.com/in/maiduydung/)  
-📅 **Calendly:** [Schedule a meeting](https://calendly.com/maiduydungvn/meeting-with-mai)
+I build with Claude Code daily -- not as autocomplete, but as a collaborator in agentic workflows. Most of what's in these repos was built AI-natively: architecture by me, implementation in tight loops with LLMs, every line reviewed and understood.
 
----
+I care about systems that combine domain knowledge with AI -- deterministic logic where it's reliable, LLM reasoning where it adds real value. No AI theater.
 
-*Check out my [personal site](https://maiduydung.com) for more details on my work and projects.*
+### Contact
 
-
+[maiduydungvn@gmail.com](mailto:maiduydungvn@gmail.com) / [LinkedIn](https://www.linkedin.com/in/maiduydung/)
