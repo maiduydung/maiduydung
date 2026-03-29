@@ -8,7 +8,7 @@ class State(rx.State):
     title: str = "Trilingual Data & ML Engineer"
     languages: str = "English / Vietnamese / Japanese"
     tagline: str = "Founder & CEO at Pathfinder Softworks. I build data systems, automation, and AI agents for companies that make physical things."
-    subtitle: str = "We turn messy business operations into machines -- pipelines that don't break, automation that saves money, decisions backed by real data."
+    subtitle: str = "We turn messy business operations into machines. Pipelines that don't break. Automation that saves money. Decisions backed by real data."
     locations: str = "Tokyo, Shanghai, Vancouver, NYC, and SF"
     nav_links: list[dict[str, str]] = [
         {"name": "About", "href": "#about"},
@@ -76,12 +76,12 @@ class State(rx.State):
         {
             "icon": "cpu",
             "title": "Applied ML & AI",
-            "description": "I deploy AI systems that actually work—chatbots, search, and classification models. No AI theater, just real use cases that deliver value.",
+            "description": "I deploy AI systems that actually work: chatbots, search, and classification models. No AI theater, just real use cases that deliver value.",
         },
         {
             "icon": "briefcase",
             "title": "VC Tools & Real Estate Intelligence",
-            "description": "I build full-stack platforms for investor workflows, including deal sourcing, property ROI analysis, and intelligent search—all tailored for decision-makers.",
+            "description": "I build full-stack platforms for investor workflows: deal sourcing, property ROI analysis, and intelligent search. All tailored for decision-makers.",
         },
     ]
     tech_stack: list[dict[str, str | list[dict[str, str]]]] = [

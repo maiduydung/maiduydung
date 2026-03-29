@@ -380,7 +380,7 @@ def cta_section() -> rx.Component:
                             target="_blank",
                             class_name="text-blue-600 hover:underline font-semibold",
                         ),
-                        ", I help founder-led companies replace chaos with systems. You don't need a full-time hire -- you need an expert who can deliver results now.",
+                        ", I help founder-led companies replace chaos with systems. You don't need a full-time hire. You need someone who can deliver results now.",
                         class_name="mt-3 text-lg text-gray-600",
                     ),
                     rx.el.a(
