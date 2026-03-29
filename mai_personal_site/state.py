@@ -7,7 +7,8 @@ class State(rx.State):
     name: str = "Mai"
     title: str = "Trilingual Data & ML Engineer"
     languages: str = "English / Vietnamese / Japanese"
-    tagline: str = "I build end-to-end data and AI systems for fast-moving startups and SaaS companies."
+    tagline: str = "Founder & CEO at Pathfinder Softworks. I build data systems, automation, and AI agents for companies that make physical things."
+    subtitle: str = "We turn messy business operations into machines -- pipelines that don't break, automation that saves money, decisions backed by real data."
     locations: str = "Tokyo, Shanghai, Vancouver, NYC, and SF"
     nav_links: list[dict[str, str]] = [
         {"name": "About", "href": "#about"},

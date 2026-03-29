@@ -22,7 +22,13 @@ def hero_section() -> rx.Component:
                         State.tagline, class_name="mt-6 text-lg text-gray-600 max-w-2xl"
                     ),
                     rx.el.p(
-                        f"Proven track record across {State.locations}.",
+                        State.subtitle,
+                        class_name="mt-3 text-md text-gray-500 max-w-2xl",
+                    ),
+                    rx.el.p(
+                        "Proven track record across ",
+                        rx.el.span(State.locations, class_name="text-gray-600"),
+                        ". Based in Saigon.",
                         class_name="mt-2 text-md text-gray-500",
                     ),
                     rx.el.div(
@@ -363,11 +369,18 @@ def cta_section() -> rx.Component:
             rx.el.div(
                 rx.el.div(
                     rx.el.h2(
-                        "Open for Short-Term Projects",
+                        "Open for Projects & Partnerships",
                         class_name="text-3xl font-bold text-gray-900 tracking-tighter",
                     ),
                     rx.el.p(
-                        "You don't need a full-time hire. You need an expert who can deliver results now.",
+                        "Through ",
+                        rx.el.a(
+                            "Pathfinder Softworks",
+                            href="https://pathfindersoftworks.com",
+                            target="_blank",
+                            class_name="text-blue-600 hover:underline font-semibold",
+                        ),
+                        ", I help founder-led companies replace chaos with systems. You don't need a full-time hire -- you need an expert who can deliver results now.",
                         class_name="mt-3 text-lg text-gray-600",
                     ),
                     rx.el.a(
@@ -454,7 +467,7 @@ def footer() -> rx.Component:
     return rx.el.footer(
         rx.el.div(
             rx.el.p(
-                f"© {2025} Mai. All Rights Reserved.",
+                f"© {2026} Mai Duy Dung. Pathfinder Softworks. All Rights Reserved.",
                 class_name="text-sm text-gray-500",
             ),
             rx.el.div(
@@ -500,4 +513,4 @@ app = rx.App(
         ),
     ],
 )
-app.add_page(index, title="Mai - Data & ML Engineer")
+app.add_page(index, title="Mai Duy Dung - Founder @ Pathfinder Softworks")
