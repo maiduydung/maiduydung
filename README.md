@@ -1,4 +1,4 @@
-## Hi, I'm Mai Duy Dung (Mike)
+## Hi, I'm Mai Duy Dung
 
 Founder & CEO @ **[Pathfinder Softworks](https://pathfindersoftworks.com)**. We build data systems, automation, and AI agents for companies that make physical things.
 
