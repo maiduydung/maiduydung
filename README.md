@@ -16,10 +16,11 @@ I don't build "AI demos." I build systems that replace chaos. Pipelines that don
 
 I built the data infrastructure that makes this possible: a distributed pipeline that continuously ingests, validates, and enriches property data across multiple U.S. states. Key engineering pieces:
 
-- **Confidence-scored validation layer**: statistical MAD analysis flags unreliable rental estimates so investors see quality signals, not raw data dumps
+- **National-scale scraping pipeline**: crawls and ingests property listings across the U.S. on Azure Functions, multi-source with deduplication, retry logic, and intelligent caching
+- **Medallion architecture on Azure**: raw ingest (bronze) -> cleaned and validated (silver) -> analytics-ready (gold). Cosmos DB for operational data, snapshotted to Parquet files and loaded into DuckDB for fast columnar analytics served directly from Next.js. Redis for low-latency reads.
+- **ML rental prediction with MLOps**: models trained on scraped data, automated retraining pipelines, model versioning and monitoring in production
 - **Sub-second similarity search**: DuckDB columnar engine + pre-computed ZIP spatial relationships, ranked comparables across hundreds of thousands of records in milliseconds
-- **AI enrichment microservices**: LLM-assisted multifamily unit estimation, multi-source reconciliation with 120-day intelligent caching and automatic fallback
-- **GPU-accelerated map visualization**: deck.gl/WebGL rendering for smooth interaction across entire markets
+- **AI enrichment microservices**: LLM-assisted multifamily unit estimation, multi-source reconciliation with automatic fallback
 
 **Stack**: Next.js · Python · Azure Functions · Azure Cosmos DB · DuckDB · Azure Cognitive Search · Azure Service Bus
 
