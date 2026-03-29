@@ -10,11 +10,26 @@ I don't build "AI demos." I build systems that replace chaos. Pipelines that don
 
 ### What I'm building
 
+**AI/Data Pipeline for [Proplytics](https://www.proplytics.net/) — U.S. SaaS Real Estate Investment Analytics**
+
+[Proplytics](https://www.proplytics.net/) helps property investors instantly evaluate any U.S. property: ROI, cap rate, cash flow projections, and dual rental strategy comparison (long-term vs. short-term/Airbnb) — work that used to take hours of spreadsheet grinding, delivered in seconds.
+
+I built the data infrastructure that makes this possible: a distributed pipeline that continuously ingests, validates, and enriches property data across multiple U.S. states. Key engineering pieces:
+
+- **Confidence-scored validation layer** — statistical MAD analysis flags unreliable rental estimates so investors see quality signals, not raw data dumps
+- **Sub-second similarity search** — DuckDB columnar engine + pre-computed ZIP spatial relationships, ranked comparables across hundreds of thousands of records in milliseconds
+- **AI enrichment microservices** — LLM-assisted multifamily unit estimation, multi-source reconciliation with 120-day intelligent caching and automatic fallback
+- **GPU-accelerated map visualization** — deck.gl/WebGL rendering for smooth interaction across entire markets
+
+Stack: Next.js · Python · Azure Functions · Azure Cosmos DB · DuckDB · Azure Cognitive Search · Azure Service Bus
+
+[github.com/proplytics](https://github.com/proplytics/)
+
 **Multi-agent systems for real domains:**
 
-- [`medical-agents`](https://github.com/maiduydung/medical-agents) Real-time vitals monitoring with multi-agent triage. Deterministic rules handle the common path ($0 LLM cost), specialist agents activate only on anomalies. Azure Service Bus + LangGraph + Chroma + openFDA APIs.
-
 - [`financial_agents`](https://github.com/maiduydung/financial_agents) Company analyst agent: RAG over financial docs, live market data, web research. LangGraph orchestration, Streamlit UI with real-time agent activity logs.
+
+- [`medical-agents`](https://github.com/maiduydung/medical-agents) Real-time vitals monitoring with multi-agent triage. Deterministic rules handle the common path ($0 LLM cost), specialist agents activate only on anomalies. Azure Service Bus + LangGraph + Chroma + openFDA APIs.
 
 - [`FlowShot`](https://github.com/maiduydung/FlowShot) CLI/library that reads codebases and generates branded workflow diagrams via LLM. Point it at repos, get SVGs. `pip install flowshot`.
 
@@ -22,7 +37,7 @@ I don't build "AI demos." I build systems that replace chaos. Pipelines that don
 
 - [`TruckerMobile`](https://github.com/maiduydung/TruckerMobile) + [`TruckerMobileBackend`](https://github.com/maiduydung/TruckerMobileBackend) Cross-platform trip logger for truck drivers. Expo (React Native) + Azure Functions + PostgreSQL. Built for drivers with minimal tech literacy. Every action is max 2 taps.
 
-- **nhutin-backend** (private) Real-time BOM optimization for manufacturing. Solves material requirements planning for a mid-size operation.
+- [`nhutin-backend`](https://github.com/maiduydung/nhutin-backend) Real-time BOM optimization for a truck body manufacturer. 4-phase constrained feasibility algorithm that solves material requirements planning under real inventory constraints.
 
 ---
 
