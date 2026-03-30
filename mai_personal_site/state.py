@@ -7,7 +7,7 @@ class State(rx.State):
     name: str = "Mai"
     title: str = "Trilingual Data & ML Engineer"
     languages: str = "English / Vietnamese / Japanese"
-    tagline: str = "Founder & CEO at Pathfinder Softworks. I build data systems, automation, and AI agents for companies that make physical things."
+    tagline: str = "I build data systems, automation, and AI agents for companies that make physical things."
     subtitle: str = "We turn messy business operations into machines. Pipelines that don't break. Automation that saves money. Decisions backed by real data."
     locations: str = "Tokyo, Shanghai, Vancouver, NYC, and SF"
     nav_links: list[dict[str, str]] = [
@@ -146,8 +146,8 @@ class State(rx.State):
     why_me: list[dict[str, str]] = [
         {
             "icon": "briefcase",
-            "title": "Founder Mindset, Builder Execution",
-            "description": "I code like a builder and think like a founder. I understand the business context behind the technical requirements.",
+            "title": "Business Mindset, Builder Execution",
+            "description": "I code like a builder and think about the business context behind the technical requirements.",
         },
         {
             "icon": "users",

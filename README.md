@@ -1,6 +1,6 @@
 ## Hi, I'm Mai Duy Dung
 
-Founder & CEO @ **[Pathfinder Softworks](https://pathfindersoftworks.com)**. We build data systems, automation, and AI agents for companies that make physical things.
+Data & ML Engineer. I build data systems, automation, and AI agents for companies that make physical things.
 
 Based in Saigon, Vietnam. Lived in Japan for 7 years (MEXT scholarship + engineering work). I speak English, Vietnamese, and Japanese.
 
@@ -26,6 +26,12 @@ I built the data infrastructure that makes this possible: a distributed pipeline
 
 [github.com/proplytics](https://github.com/proplytics/)
 
+**Past work for a trucking SME:**
+
+- [`TruckerMobile`](https://github.com/maiduydung/TruckerMobile) + [`TruckerMobileBackend`](https://github.com/maiduydung/TruckerMobileBackend) Cross-platform trip logger for truck drivers. Expo (React Native) + Azure Functions + PostgreSQL. Built for drivers with minimal tech literacy. Every action is max 2 taps.
+
+- [`nhutin-backend`](https://github.com/maiduydung/nhutin-backend) Real-time BOM optimization for a truck body manufacturer. 4-phase constrained feasibility algorithm that solves material requirements planning under real inventory constraints.
+
 **Multi-agent systems for real domains:**
 
 - [`financial_agents`](https://github.com/maiduydung/financial_agents) Company analyst agent: RAG over financial docs, live market data, web research. LangGraph orchestration, Streamlit UI with real-time agent activity logs.
@@ -33,12 +39,6 @@ I built the data infrastructure that makes this possible: a distributed pipeline
 - [`medical-agents`](https://github.com/maiduydung/medical-agents) Real-time vitals monitoring with multi-agent triage. Deterministic rules handle the common path ($0 LLM cost), specialist agents activate only on anomalies. Azure Service Bus + LangGraph + Chroma + openFDA APIs.
 
 - [`FlowShot`](https://github.com/maiduydung/FlowShot) CLI/library that reads codebases and generates branded workflow diagrams via LLM. Point it at repos, get SVGs. `pip install flowshot`.
-
-**Production software for a trucking SME:**
-
-- [`TruckerMobile`](https://github.com/maiduydung/TruckerMobile) + [`TruckerMobileBackend`](https://github.com/maiduydung/TruckerMobileBackend) Cross-platform trip logger for truck drivers. Expo (React Native) + Azure Functions + PostgreSQL. Built for drivers with minimal tech literacy. Every action is max 2 taps.
-
-- [`nhutin-backend`](https://github.com/maiduydung/nhutin-backend) Real-time BOM optimization for a truck body manufacturer. 4-phase constrained feasibility algorithm that solves material requirements planning under real inventory constraints.
 
 ---
 
@@ -59,18 +59,8 @@ Every repo has a `CLAUDE.md` and governance rules. I treat LLM-readability as a 
 
 ---
 
-### Pathfinder Softworks
-
-I started [Pathfinder Softworks](https://pathfindersoftworks.com) to solve the problems I kept seeing in founder-led companies: messy data, manual workflows, decisions based on gut instead of systems.
-
-We work with companies of 5 to 40 people. Domain experts in logistics, manufacturing, legal, real estate who need real infrastructure, not slide decks. ETL pipelines, workflow automation, validation layers, data-backed decision systems.
-
-**The pitch:** We turn messy business operations into machines.
-
----
-
 ### Let's talk
 
 Open to partnerships, consulting engagements, and interesting problems.
 
-[maiduydungvn@gmail.com](mailto:maiduydungvn@gmail.com) / [LinkedIn](https://www.linkedin.com/in/maiduydung/) / [pathfindersoftworks.com](https://pathfindersoftworks.com)
+[maiduydungvn@gmail.com](mailto:maiduydungvn@gmail.com) / [LinkedIn](https://www.linkedin.com/in/maiduydung/)

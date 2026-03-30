@@ -330,7 +330,7 @@ def why_me_section() -> rx.Component:
                     class_name="text-3xl md:text-4xl font-bold text-gray-800 tracking-tighter",
                 ),
                 rx.el.p(
-                    "I combine technical depth with a founder's mindset to deliver results, not just code.",
+                    "I combine technical depth with a product mindset to deliver results, not just code.",
                     class_name="mt-4 text-lg text-gray-600 max-w-2xl mx-auto",
                 ),
                 class_name="text-center",
@@ -373,14 +373,7 @@ def cta_section() -> rx.Component:
                         class_name="text-3xl font-bold text-gray-900 tracking-tighter",
                     ),
                     rx.el.p(
-                        "Through ",
-                        rx.el.a(
-                            "Pathfinder Softworks",
-                            href="https://pathfindersoftworks.com",
-                            target="_blank",
-                            class_name="text-blue-600 hover:underline font-semibold",
-                        ),
-                        ", I help founder-led companies replace chaos with systems. You don't need a full-time hire. You need someone who can deliver results now.",
+                        "I help companies replace chaos with systems. You don't need a full-time hire. You need someone who can deliver results now.",
                         class_name="mt-3 text-lg text-gray-600",
                     ),
                     rx.el.a(
@@ -467,7 +460,7 @@ def footer() -> rx.Component:
     return rx.el.footer(
         rx.el.div(
             rx.el.p(
-                f"© {2026} Mai Duy Dung. Pathfinder Softworks. All Rights Reserved.",
+                f"© {2026} Mai Duy Dung. All Rights Reserved.",
                 class_name="text-sm text-gray-500",
             ),
             rx.el.div(
@@ -513,4 +506,4 @@ app = rx.App(
         ),
     ],
 )
-app.add_page(index, title="Mai Duy Dung - Founder @ Pathfinder Softworks")
+app.add_page(index, title="Mai Duy Dung - Data & ML Engineer")
