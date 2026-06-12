@@ -8,26 +8,6 @@ I don't build "AI demos." I build systems that replace chaos. Pipelines that don
 
 ---
 
-### Pathfinder Softworks
-
-Software studio for SMEs in manufacturing and logistics — the businesses that run the physical economy but get ignored by enterprise software. We build the systems they actually need: operations tooling, data pipelines, and AI agents that survive contact with real-world mess.
-
-**Client work — trucking & truck manufacturing:**
-
-- [`TruckerMobile`](https://github.com/maiduydung/TruckerMobile) + [`TruckerMobileBackend`](https://github.com/maiduydung/TruckerMobileBackend) Cross-platform trip logger for truck drivers. Expo (React Native) + Azure Functions + PostgreSQL. Built for drivers with minimal tech literacy. Every action is max 2 taps.
-
-- [`nhutin-backend`](https://github.com/maiduydung/nhutin-backend) Real-time BOM optimization for a truck body manufacturer. 4-phase constrained feasibility algorithm that solves material requirements planning under real inventory constraints.
-
-**Multi-agent systems for real domains:**
-
-- [`financial_agents`](https://github.com/maiduydung/financial_agents) Company analyst agent: RAG over financial docs, live market data, web research. LangGraph orchestration, Streamlit UI with real-time agent activity logs.
-
-- [`medical-agents`](https://github.com/maiduydung/medical-agents) Real-time vitals monitoring with multi-agent triage. Deterministic rules handle the common path ($0 LLM cost), specialist agents activate only on anomalies. Azure Service Bus + LangGraph + Chroma + openFDA APIs.
-
-- [`FlowShot`](https://github.com/maiduydung/FlowShot) CLI/library that reads codebases and generates branded workflow diagrams via LLM. Point it at repos, get SVGs. `pip install flowshot`.
-
----
-
 ### Recent: Outrider — on-prem LLM for smart buildings
 
 LLM-powered operations assistant for commercial facilities (hospitality, building automation, energy management) — running **entirely on-site on a single edge box**. No cloud, no data egress, no per-token bill. The building's data never leaves the building.
@@ -35,6 +15,18 @@ LLM-powered operations assistant for commercial facilities (hospitality, buildin
 - **Edge inference under real constraints:** quantized open-weight models (FP4) served with vLLM on NVIDIA Jetson-class hardware. Model selection driven by hands-on benchmarking across model families under tight memory and thermal budgets — the best model on a leaderboard is rarely the best model on a 60W box.
 - **Deterministic agent workflows:** the LLM proposes, deterministic policy disposes. Hard safety floors on anything that touches physical controls — in building systems, "the model hallucinated" is not an acceptable failure mode.
 - **Appliance-grade packaging:** model + runtime + agent workflows shipped as a self-contained unit that can be racked on-site and run offline.
+
+---
+
+### Pathfinder Softworks
+
+Software studio for SMEs in manufacturing and logistics — the businesses that run the physical economy but get ignored by enterprise software. We build the systems they actually need: operations tooling, data pipelines, and AI agents that survive contact with real-world mess.
+
+**Client work — trucking & truck manufacturing** *(private repos)*:
+
+- `Roadlog` Cross-platform trip logger for truck drivers — mobile app + backend. Expo (React Native) + Azure Functions + PostgreSQL. Built for drivers with minimal tech literacy. Every action is max 2 taps.
+
+- `Forgeline` Real-time BOM optimization for a truck body manufacturer. 4-phase constrained feasibility algorithm that solves material requirements planning under real inventory constraints.
 
 ---
 
