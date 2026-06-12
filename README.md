@@ -28,15 +28,13 @@ Software studio for SMEs in manufacturing and logistics — the businesses that 
 
 ---
 
-### Recent: Outrider — on-prem LLM for smart buildings *(client engagement, under NDA)*
+### Recent: Outrider — on-prem LLM for smart buildings
 
 LLM-powered operations assistant for commercial facilities (hospitality, building automation, energy management) — running **entirely on-site on a single edge box**. No cloud, no data egress, no per-token bill. The building's data never leaves the building.
 
 - **Edge inference under real constraints:** quantized open-weight models (FP4) served with vLLM on NVIDIA Jetson-class hardware. Model selection driven by hands-on benchmarking across model families under tight memory and thermal budgets — the best model on a leaderboard is rarely the best model on a 60W box.
 - **Deterministic agent workflows:** the LLM proposes, deterministic policy disposes. Hard safety floors on anything that touches physical controls — in building systems, "the model hallucinated" is not an acceptable failure mode.
 - **Appliance-grade packaging:** model + runtime + agent workflows shipped as a self-contained unit that can be racked on-site and run offline.
-
-The code is the client's; the lessons are mine — and they transfer directly to any SME that wants AI without handing its operational data to a cloud vendor.
 
 ---
 
